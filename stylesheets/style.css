@@ -311,7 +311,39 @@
         }
 
         .footer {
-            margin-top: 20px;
+            margin-top: auto;
+       
         }
-    
+      /* Additional styles for the contact form on smaller screens */
+      .contact-content {
+        padding: 20px;
+        margin-top: 50px;
+    }
+
+    .contact-form {
+        margin-bottom: 10px;
+    }
+
+    .contact-content h1 {
+        font-size: 20px;
+    }
+
+    .contact-content p {
+        font-size: 14px;
+        margin: 10px 0;
+    }
+
+    .contact-form label {
+        font-size: 12px;
+    }
+
+    .contact-form input,
+    .contact-form textarea {
+        padding: 6px;
+        margin: 6px 0;
+    }
+
+    .contact-form button {
+        padding: 6px 12px;
+    }
     }
