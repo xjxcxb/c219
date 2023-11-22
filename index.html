@@ -1,0 +1,100 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" type="text/css" href="stylesheets/style.css"/>  
+    <script src="https://code.jquery.com/jquery-3.6.4.min.js"></script>
+    <title>WX Navigation</title>
+</head>
+<body>
+    <div class="video-container">
+        <video autoplay muted loop>
+            <source src="website.mp4" type="video/mp4">
+        </video>
+    </div>
+
+    <nav class="navbar">
+        <div class="logo">
+            <img src="logo.svg" alt="Your SVG Image">
+        </div>
+        
+   <!-- Hamburger Menu -->
+<input type="checkbox" id="menu-toggle" class="menu-toggle">
+<label for="menu-toggle" class="menu-icon">&#9776;</label>
+
+
+
+        <ul class="menu">
+            <li><a href="index.html">Home</a></li>
+            <li><a href="package-tours.html">Package Tours</a></li>
+            <li><a href="rediscover-singapore.html">Rediscover Singapore</a></li>
+            <li><a href="cruises.html">Cruises</a></li>
+            <li><a href="contact-us.html">Contact Us</a></li>
+        </ul>
+    </nav>
+
+    <section class="main-content">
+        <h1 style="color: #25A22B;">Welcome to Our Website</h1>
+        <p>Welcome to our travel website, your portal to adventure and exploration. Discover new destinations and experiences with every click.</p>
+    </section>
+
+    <div class="article-container">
+        <article class="feature">
+            <h2 style="color: #25A22B;">Baros Island - Maldives</h2>
+            <p>Baros Island is a jewel in the Indian Ocean, surrounded by a vibrant coral reef teeming with marine life. As you step onto the island,
+                you'll be greeted by lush tropical vegetation and swaying palm trees that create an oasis of serenity.
+                The pristine beaches are a sanctuary for those seeking tranquility and a picture-perfect backdrop for romantic walks along the shoreline.</p>
+            <img src="maldives.png" alt="Article 1 Image">
+        </article>
+
+        <article class="feature">
+            <h2 style="color: #25A22B;">Blue Lagoon - Iceland </h2>
+            <p>The Blue Lagoon is a natural wonder, a secluded oasis where land and sea merge in perfect harmony. The tranquil waters are a breathtaking shade
+                of blue, framed by rugged, lush cliffs and abundant greenery. The setting is nothing short of picturesque, making it an Instagrammer's
+                paradise and an adventurer's playground.</p>
+            <img src="bluelagoon.jpg" alt="Article 2 Image">
+        </article>
+
+        <article class="feature">
+            <h2 style="color: #25A22B;">Grand Canyon - USA</h2>
+            <p>The Grand Canyon is an unparalleled geological masterpiece, a natural wonder carved over millions of years by the mighty Colorado River.
+                It stretches for 277 miles, revealing layer upon layer of Earth's history in its red and orange cliffs.
+                Gaze out over its vast expanse and marvel at the immense chasm before your eyes.</p>
+            <img src="grandcanyon.jpg" alt="Article 3 Image">
+        </article>
+    </div>
+
+    <footer>
+        <p>&copy; 2023 World Xplore</p>
+    </footer>
+
+    <!-- Add this script in the head section of your HTML file -->
+<!-- Add this script in the head section of your HTML file -->
+<script>
+ $(document).ready(function () {
+    // Toggle menu visibility when clicking the menu icon
+    $(".menu-icon").click(function () {
+        $(".menu").slideToggle();
+    });
+
+    // Hide menu when a menu item is clicked
+    $(".menu li a").click(function () {
+        $(".menu").slideUp();
+    });
+
+    // Adjust menu display on window resize
+    $(window).resize(function () {
+        if ($(window).width() > 768) {
+            $(".menu").removeAttr("style");
+        }
+    });
+});
+
+
+
+</script>
+
+
+</body>
+</html>

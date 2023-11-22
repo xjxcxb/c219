@@ -1,0 +1,317 @@
+    body {
+        margin: 0;
+        padding: 0;
+        
+        font-family: 'Montserrat', sans-serif; /* Apply Montserrat font to the entire page */
+    }
+
+
+
+    /* Animate the Logo on Hover */
+    .logo img:hover {
+        transform: scale(1.2);
+        transition: transform 0.3s ease;
+    }
+
+    /* Navigation Styles for Current Page and Hover Effects */
+    .menu li.current a {
+        font-weight: bold;
+    }
+
+    .menu li a:hover {
+        color: #25A22B;
+    }
+
+    /* Dropdown Menu for Package Tours */
+    .dropdown {
+        position: relative;
+        display: inline-block;
+    }
+
+    .dropdown-content {
+        display: none;
+        position: absolute;
+        background-color: #f9f9f9;
+        min-width: 160px;
+        box-shadow: 0px 8px 16px 0px rgba(0, 0, 0, 0.2);
+    }
+
+    .dropdown:hover .dropdown-content {
+        display: block;
+    }
+
+    /* Zoom Effect for Article Images on Hover */
+    .feature img:hover {
+        transform: scale(1.5);
+        transition: transform 0.3s ease;
+    }
+
+    .navbar {
+        background-color: whitesmoke;
+        display: flex;
+        justify-content: space-between;
+        align-items: center;
+        padding: 15px;
+        height: 20px;
+        position: fixed;
+        width: 100%;
+    }
+
+    .logo img {
+        width: 175px;
+        height: auto;
+        margin-top: 80px;
+    }
+
+    .navbar .logo a {
+        text-align: center;
+        font-size: 24px;
+        text-decoration: none;
+        font-family: 'Montserrat', sans-serif; /* Apply Montserrat font to the logo */
+    }
+
+    .menu {
+        list-style-type: none;
+        margin: 0;
+        padding: 0;
+        display: flex;
+    }
+
+    .menu li {
+        margin-right: 20px;
+    }
+
+    .menu li:last-child {
+        margin-left: 50;
+    }
+
+    .menu li a {
+        text-align: center;
+        text-decoration: none;
+        color: black;
+        font-family: 'Montserrat', sans-serif; /* Apply Montserrat font to the menu items */
+    }
+
+    .menu li a:hover {
+        background-color: #555;
+    }
+
+    .video-container {
+        position: absolute;
+        width: 100%;
+        height: 100vh;
+        z-index: -1;
+    }
+
+    .video-container video {
+        width: 100%;
+        position: absolute;
+        height: 100%;
+        object-fit: cover;
+    }
+
+    .main-content {
+        background-color: white;
+        padding: 20px;
+        text-align: center;
+        padding-top: 50px;
+        font-family: 'Montserrat', sans-serif; /* Apply Montserrat font to the main content */
+    }
+
+    .article-container {
+        margin-top: 40px;
+        display: flex;
+        justify-content: space-around;
+        align-items: stretch; /* Make items stretch to equal height */
+        margin-right: 40px; /* Adjust as needed */
+    }
+
+    .feature {
+        background-color: rgba(249, 249, 249, 0.9);
+        padding: 20px;
+        text-align: center;
+        flex: 1;
+        margin: 10px;
+        display: flex;
+        flex-direction: column;
+        justify-content: space-between;
+        align-items: center;
+        border-radius: 10px;
+        opacity: 0.9;
+        height: 100%; /* Set a fixed height for each card */
+    }
+/* Add this style to make the Blue Lagoon image smaller */
+.feature img[alt="Article 1 Image"] {
+    max-width: 81%; /* Adjust the percentage to your preference */
+    height: auto;
+}
+/* Add this style to make the Blue Lagoon image smaller */
+.feature img[alt="Article 2 Image"] {
+    max-width: 80%; /* Adjust the percentage to your preference */
+    height: auto;
+}
+/* Add this style to make the Blue Lagoon image smaller */
+.feature img[alt="Article 3 Image"] {
+    max-width: 90%; /* Adjust the percentage to your preference */
+    height: auto;
+}
+
+    .feature h2 {
+        font-size: 18px;
+    }
+
+    .feature p {
+        font-size: 13px;
+    }
+
+    .feature img {
+        max-width: 100%;
+        max-height: 100%;
+        object-fit: cover;
+        width: 100%;
+        height: 100%; /* Set height to be the same as width to create a square */
+        margin-top: 15px;
+        border-radius: 10px; /* You can adjust the border-radius as needed */
+    }
+
+    footer {
+        margin-top: 120px;
+        background-color: #333;
+        color: white;
+        text-align: center;
+        padding: 10px;
+        font-family: 'Montserrat', sans-serif; /* Apply Montserrat font to the footer */
+    }
+
+    .contact-content {
+        background-color: rgba(255, 255, 255, 0.7);
+        padding: 140px;
+        text-align: center;
+        margin: 20px auto;
+        margin-top: 0px;
+        border-radius: 5px;
+        box-shadow: 0 0 5px rgba(0, 0, 0, 0.1);
+        max-width: 800px;
+        height: auto;
+    }
+
+    .contact-form {
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        margin-bottom: 20px; /* Add margin bottom to create space between the form and the text */
+    }
+
+    .contact-content h1 {
+        font-size: 24px;
+        margin: 0; /* Remove margin-bottom to prevent additional spacing */
+    }
+
+    .contact-content p {
+        font-size: 16px;
+        margin: 20px 0; /* Add margin to create space between the text and the form */
+    }
+
+    .contact-form label {
+        font-size: 14px;
+        margin-top: 8px;
+    }
+
+    .contact-form input,
+    .contact-form textarea {
+        width: 100%;
+        padding: 8px;
+        margin: 8px 0;
+        border: 1px solid #ccc;
+        border-radius: 4px;
+    }
+
+    .contact-form button {
+        background-color: #25A22B;
+        color: #fff;
+        padding: 8px 16px;
+        border: none;
+        border-radius: 4px;
+        cursor: pointer;
+    }
+
+    .contact-form button:hover {
+        background-color: #1E7C21;
+    }
+
+    /* Hide the hamburger menu on larger screens */
+
+    .menu-icon{
+        display: none;
+    }
+    .menu-toggle {
+        display: none;
+    }   
+
+    /* Adjustments for smaller devices */
+    @media only screen and (max-width: 768px) {
+        .video-container video {
+            display: block;
+        }
+
+    
+        .navbar {
+            display: flex; /* Hide the navbar on smaller devices */
+            padding: 10px;
+        }
+
+        .menu {
+            display:none;
+            position:absolute;
+            text-align: right;
+            margin-right:20px;
+            margin-top:170px;
+            right:0;
+            background-color:#f9f9f9;
+          
+        }
+        .menu-toggle {
+            display: none;
+        }
+        
+        .menu li {
+            display: block;
+            margin: 10px 0;
+            background-color:#f9f9f9;
+            text-align: center;
+            font-size:13px;
+        }
+        .menu-icon {
+            display: block;
+            font-size: 24px;
+            cursor: pointer;
+            margin-right:25px;
+       
+        }
+        .logo {
+          
+            display:block;
+          
+        }
+        
+        
+        .main-content {
+            padding-top: 20px;
+        }
+        /* Show the menu icon only on small screens */
+    
+
+        .article-container {
+            flex-direction: column;
+        }
+
+        .feature {
+            margin: 10px 0;
+            width: 100%; /* Make each card take the full width */
+        }
+
+        .footer {
+            margin-top: 20px;
+        }
+    
+    }
